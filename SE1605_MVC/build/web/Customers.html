@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet">
+    </head>
+
+    <body>
+        <p><a href="CustomersController?customers=displayAllCustomers">list all</a></p>
+        <form action="CustomersController" method="post">
+            <p><input type="hidden" name="customers" value="insertCustomer"></p>
+            <table>
+                <tr>
+                    <td><label for="ID">ID : </label></td>
+                    <td><input  type="text" id="ID" name="ID"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="FirstName">FirstName : </label></td>
+                    <td><input  type="text" id="FirstName" name="FirstName"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="LastName">LastName : </label></td>
+                    <td><input  type="text" id="LastName" name="LastName"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Phone">Phone : </label></td>
+                    <td><input  type="text" id="Phone" name="Phone"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email : </label></td>
+                    <td><input  type="text" id="Email" name="Email"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Street">Street : </label></td>
+                    <td><input  type="text" id="Street" name="Street"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="City">City : </label></td>
+                    <td><input  type="text" id="City" name="City"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="State">State : </label></td>
+                    <td><input  type="text" id="State" name="State"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="Zip_code">Zip_code : </label></td>
+                    <td><input  type="text" id="Zip_code" name="Zip_code"><br></td>
+                </tr>   
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <input  type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

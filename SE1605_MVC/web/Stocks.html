@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="newcss.css">
+
+    </head>
+    <body>
+        <p><a href="StocksController?stocks=displayAllStocks">list all</a></p>
+        <form action="StocksController" method="Post">
+            <p><input type="hidden" name="stocks" value="insertStock"></p>
+
+            <h3>FORM ADD STORE INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td>Store Name</td>
+                    <td><select name="id" id="id">
+                            <option value="1">Santa Cruz Bikes</option>
+                            <option value="2">Baldwin Bikes</option>
+                            <option value="3">Rowlett Bikes</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pid">ProductID</label></td>
+                    <td><input  type="number" name="pid" id="pid"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="quantity">quantity</label></td>
+                    <td><input  type="number" name="quantity" id="quantity"></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <input  type="submit" value="Submit" name="submit">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>

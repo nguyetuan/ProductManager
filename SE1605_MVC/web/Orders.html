@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet">
+    </head>
+
+    <body>
+        <p><a href="OrdersController?orders=displayAllOrders">list all Orders</a></p>
+        <form action="OrdersController" method="post">
+            <p><input type="hidden" name="orders" value="insertOrder"></p>
+            <table>
+                <tr>
+                    <td><label for="order_id">order_id : </label></td>
+                    <td><input  type="text" id="order_id" name="order_id"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="customer_id">customer_id : </label></td>
+                    <td><input  type="text" id="customer_id" name="customer_id"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="order_status">order_status : </label></td>
+                    <td><input  type="text" id="order_status" name="order_status"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="order_date">order_date : </label></td>
+                    <td><input  type="text" id="order_date" name="order_date"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="required_date">required_date : </label></td>
+                    <td><input  type="text" id="required_date" name="required_date"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="shipped_date">shipped_date : </label></td>
+                    <td><input  type="text" id="shipped_date" name="shipped_date"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="store_id">store_id : </label></td>
+                    <td><input  type="text" id="store_id" name="store_id"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="staff_id">staff_id : </label></td>
+                    <td><input  type="text" id="staff_id" name="staff_id"><br></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <input  type="submit" value="Submit" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

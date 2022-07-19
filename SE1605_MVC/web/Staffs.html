@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Staff</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet">
+
+    </head>
+    <body>
+       <p><a href="StaffsController?staffs=displayAllStaffs">list all</a></p>
+        <form action="StaffsController" method="Post">
+            <p><input type="hidden" name="staffs" value="insertStaff"></p>
+            <h3>FORM ADD STAFF INFORMATIONS</h3>
+            <table>
+                <tr>
+                    <td><label for="id">StaffID</label></td>
+                    <td><input  type="number" name="id" id="id"></td>
+                </tr>
+                <tr>
+                    <td><label for="fName">firstName</label></td>
+                    <td><input  type="text" name="fName" id="fName"></td>
+                </tr>
+                <tr>
+                    <td><label for="lName">lastName</label></td>
+                    <td><input  type="text" name="lName" id="lName"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">email</label></td>
+                    <td><input  type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">phone</label></td>
+                    <td><input  type="text" name="phone" id="phone"></td>
+                </tr>
+                <tr>
+                    <td> Active </td>
+                    <td>   <input type="radio" name="active" value="=1">Active
+                        <input type="radio" name="active" value="=0">DeActive </td>
+                </tr>
+                <tr>
+                    <td>Store Name</td>
+                    <td><select name="Sid" id="Sid">
+                            <option value="1">Santa Cruz Bikes</option>
+                            <option value="2">Baldwin Bikes</option>
+                            <option value="3">Rowlett Bikes</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="Mid">ManagerID</label></td>
+                    <td><input type="number" name="Mid" id="Mid"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input  type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>

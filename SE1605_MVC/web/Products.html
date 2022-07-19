@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet">
+    </head>
+
+    <body>
+        <form action="ProductsController" method="Post">
+            <p><input type="hidden" name="products" value="searchProduct"></p>
+            <p>Search By Name: <input type="text" name="pname" value="" />
+                <input type="submit" value="search by name" />
+
+        </form>
+        <form action="ProductsController" method="Post">
+            <p><input type="hidden" name="products" value="searchProductByPrice"></p>
+            <p>Search by price from <input type="text" name="from" value="" />
+                to <input type="text" name="to" value="" />
+                <input type="submit" value="search by price" />
+
+        </form>
+        <p><a href="ProductsController?products=displayAllProducts">list all</a></p>
+        <form action="ProductsController" method="post">
+            <p><input type="hidden" name="products" value="insertProduct"></p>
+            <table>
+                <tr>
+                    <td><label for="product_id">product_id : </label></td>
+                    <td><input  type="text" id="product_id" name="product_id"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="product_name">product_name : </label></td>
+                    <td><input  type="text" id="product_name" name="product_name"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="model_year">model_year : </label></td>
+                    <td><input  type="text" id="model_year" name="model_year"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="list_price">list_price : </label></td>
+                    <td><input  type="text" id="list_price" name="list_price"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="brand_name">brand_name : </label></td>
+                    <td><input  type="text" id="brand_name" name="brand_name"><br></td>
+                   
+                </tr>
+                <tr>
+                    <td><label for="category_name">category_name : </label></td>
+                    <td><input  type="text" id="category_name" name="category_name"><br></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" colspan="2">
+                        <input  type="submit" value="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
